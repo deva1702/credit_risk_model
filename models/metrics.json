@@ -1,0 +1,7 @@
+{
+  "roc_auc": 0.7673,
+  "pr_auc": 0.2608,
+  "ks_statistic": 0.4089,
+  "threshold_used": 0.3,
+  "val_size": 61503
+}
