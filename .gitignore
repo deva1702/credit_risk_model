@@ -1,5 +1,5 @@
 # Data — too large for git
-data/
+/data/
 
 # Python
 __pycache__/
