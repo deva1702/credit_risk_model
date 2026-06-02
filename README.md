@@ -58,7 +58,7 @@ The entire platform is fully containerized and can be launched with a single com
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/deva1702/credit_risk_model.git
    cd credit_risk_model
    ```
 
