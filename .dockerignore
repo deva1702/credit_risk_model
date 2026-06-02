@@ -1,0 +1,12 @@
+data/
+sql/*.db
+venv/
+.git/
+__pycache__/
+*.py[cod]
+.env
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+scripts/

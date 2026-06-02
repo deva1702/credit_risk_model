@@ -1,0 +1,29 @@
+
+services:
+  credit-risk-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: credit_risk_platform
+    ports:
+      - "9200:9200"
+    volumes:
+      # Mount data folder — not committed to git
+      - ./data:/app/data
+      # Mount models — persists trained artifacts
+      - ./models:/app/models
+      # Mount sql DB — persists between runs
+      - ./sql:/app/sql
+      # Mount charts
+      - ./notebooks/charts:/app/notebooks/charts
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
