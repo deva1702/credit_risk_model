@@ -1,12 +1,6 @@
 # Data — too large for git
 data/
 
-# Trained models
-models/
-
-# SQLite DB
-sql/*.db
-
 # Python
 __pycache__/
 *.py[cod]
@@ -32,3 +26,6 @@ Thumbs.db
 
 # Streamlit
 .streamlit/
+
+# Local Scripts (Redundant training scripts)
+scripts/

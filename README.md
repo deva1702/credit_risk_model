@@ -49,6 +49,7 @@ graph TD
 ## 🚀 Step-by-Step Setup & Run Instructions
 
 The entire platform is fully containerized and can be launched with a single command.
+*💡 **Zero-Setup Demo:** A pre-seeded, lightweight 7.29MB version of the database (`sql/credit_risk.db`) containing a 10,000-row sample of the tables is already committed in the repository. The application and the Talk-to-Data chatbot will run completely out of the box with zero external downloads required!*
 
 ### Prerequisites
 - [Docker & Docker Compose](https://docs.docker.com/get-docker/) installed.
